@@ -6,7 +6,7 @@
 /*   By: tbenavid <tbenavid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 19:45:08 by tbenavid          #+#    #+#             */
-/*   Updated: 2025/12/13 11:19:03 by tbenavid         ###   ########lyon.fr   */
+/*   Updated: 2026/02/23 23:23:56 by tbenavid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,10 +42,16 @@ int	ft_print_num(int i)
 	int	j;
 
 	j = 0;
+	if (i < -2147483647)
+	{
+		write(1, "-2147483648", 11);
+		return(11);
+	}
 	if (i < 0)
 	{
 		write(1, "-", 1);
 		i = -i;
+		j++;
 	}
 	if (i > 10)
 		j = j + ft_print_num(i / 10);
