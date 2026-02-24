@@ -6,7 +6,7 @@
 /*   By: tbenavid <tbenavid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 14:56:37 by tbenavid          #+#    #+#             */
-/*   Updated: 2026/02/24 00:03:03 by tbenavid         ###   ########.fr       */
+/*   Updated: 2026/02/24 01:34:57 by tbenavid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-int	format(char *str, int i, va_list arg)
+static int	format(char *str, int i, va_list arg)
 {
 	int		len;
 	char	*base_min;

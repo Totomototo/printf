@@ -6,7 +6,7 @@
 /*   By: tbenavid <tbenavid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 13:11:49 by tbenavid          #+#    #+#             */
-/*   Updated: 2025/12/13 11:11:46 by tbenavid         ###   ########lyon.fr   */
+/*   Updated: 2026/02/24 01:35:02 by tbenavid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include <stdlib.h>
 # include <stdarg.h>
 
-int		format(char *str, int i, va_list arg);
 int		ft_printf(char *str, ...);
 int		ft_strlen(char *str);
 int		ft_print_char(char c);

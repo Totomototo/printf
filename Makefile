@@ -4,7 +4,10 @@ CFLAGS = -Wall -Werror -Wextra -I.
 AR = ar rcs
 RM = rm -f
 
-SRCS = ft_printf.c  utils/ft_print_else.c utils/ft_print_print.c 
+SRCS = ft_printf.c \
+	   utils/ft_print_else.c \
+	   utils/ft_print_print.c
+
 OBJ = $(SRCS:.c=.o)
 DEP = $(SRCS:.c=.d)
 

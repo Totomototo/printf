@@ -6,7 +6,7 @@
 /*   By: tbenavid <tbenavid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 12:02:27 by tbenavid          #+#    #+#             */
-/*   Updated: 2025/12/13 11:15:18 by tbenavid         ###   ########lyon.fr   */
+/*   Updated: 2026/02/24 01:35:04 by tbenavid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +47,16 @@ int	ft_print_ptr(void *ptr)
 	int	len;
 
 	len = 0;
-	len += write(1, "0x", 2);
-	if (ptr == 0)
-		return (len + write(1, "0", 1));
-	len = len + ft_put_hexa((unsigned long)ptr);
-	return (len);
+	if (ptr == NULL)
+	{
+		return(len + write(1, "(nil)" ,5));
+	}
+	else 
+	{
+		len += write(1, "0x", 2);
+		if (ptr == 0)
+			return (len + write(1, "0", 1));
+		len = len + ft_put_hexa((unsigned long)ptr);
+	}
+		return (len);
 }
