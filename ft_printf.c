@@ -6,7 +6,7 @@
 /*   By: tbenavid <tbenavid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 14:56:37 by tbenavid          #+#    #+#             */
-/*   Updated: 2026/02/24 01:34:57 by tbenavid         ###   ########.fr       */
+/*   Updated: 2026/02/24 19:27:25 by tbenavid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,10 +59,10 @@ int	ft_printf(char *str, ...)
 			len = len + format(str, i, args);
 		}
 		else
-			{
-				ft_print_char(str[i]);
-				len++;
-			}
+		{
+			ft_print_char(str[i]);
+			len++;
+		}
 		i++;
 	}
 	return (len);
