@@ -6,7 +6,7 @@
 /*   By: tbenavid <tbenavid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 19:45:08 by tbenavid          #+#    #+#             */
-/*   Updated: 2026/02/24 19:27:41 by tbenavid         ###   ########.fr       */
+/*   Updated: 2026/02/25 11:54:58 by tbenavid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_print_unsigned(unsigned int n)
 	int	i;
 
 	i = 0;
-	if (n > 10)
+	if (n >= 10)
 		i = i + ft_print_unsigned(n / 10);
 	i = i + ft_print_char((n % 10) + '0');
 	return (i);
@@ -53,7 +53,7 @@ int	ft_print_num(int i)
 		i = -i;
 		j++;
 	}
-	if (i > 10)
+	if (i >= 10)
 		j = j + ft_print_num(i / 10);
 	j = j + ft_print_char((i % 10) + '0');
 	return (j);

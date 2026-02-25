@@ -6,7 +6,7 @@
 /*   By: tbenavid <tbenavid@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 14:56:37 by tbenavid          #+#    #+#             */
-/*   Updated: 2026/02/24 19:27:25 by tbenavid         ###   ########.fr       */
+/*   Updated: 2026/02/25 11:32:45 by tbenavid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-static int	format(char *str, int i, va_list arg)
+static int	format(const char *str, int i, va_list arg)
 {
 	int		len;
 	char	*base_min;
@@ -42,7 +42,7 @@ static int	format(char *str, int i, va_list arg)
 	return (len);
 }
 
-int	ft_printf(char *str, ...)
+int	ft_printf(const char *str, ...)
 {
 	int		i;
 	int		len;
